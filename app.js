@@ -5,6 +5,9 @@ var app = express();
 
 app.set('views', './views');
 app.set('view engine', 'jade');
+app.set('port', (process.env.PORT || 5000));
+
+app.use(express.static(__dirname + '/public'));
 
 //API key authentication
 var stormpathMiddleware = stormpath.init(app, {
@@ -23,4 +26,6 @@ app.get('/', function(req, res) {
   });
 });
 app.use('/profile',stormpath.loginRequired,require('./profile')());
-app.listen(3000);
+app.listen(app.get('port'), function() {
+  console.log('Node app is running on port', app.get('port'));
+});
