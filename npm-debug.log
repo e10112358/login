@@ -9,8 +9,8 @@
 4 verbose stack     at checkBinReferences_ (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:309:45)
 4 verbose stack     at final (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:343:3)
 4 verbose stack     at then (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:113:5)
-4 verbose stack     at ReadFileContext.callback (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:284:20)
-4 verbose stack     at FSReqWrap.readFileAfterOpen [as oncomplete] (evalmachine.<anonymous>:303:13)
+4 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:300:12
+4 verbose stack     at FSReqWrap.readFileAfterClose [as oncomplete] (evalmachine.<anonymous>:380:3)
 5 verbose cwd /Users/Crystal/Desktop/login
 6 error Darwin 14.0.0
 7 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "start"
